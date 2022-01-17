@@ -141,8 +141,11 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'mobile' => [
+            'regex' => 'Only numbers allowed',
+        ],
+        'document' => [
+            'regex' => 'Only numbers allowed',
         ],
     ],
 

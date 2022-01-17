@@ -24,12 +24,13 @@ class Customer extends Model
 {
     
     static $rules = [
-		'document' => 'required',
-		'first_name' => 'required',
-		'last_name' => 'required',
-		'mobile' => 'required',
-		'email' => 'required',
+		'document' => 'required|min:10|max:10|regex:/^[0-9]+$/',
+		'first_name' => 'required|alpha',
+		'last_name' => 'required|alpha',
+		'mobile' => 'required|min:10|max:10|regex:/^[0-9]+$/',
+		'email' => 'email|required',
 		'address' => 'required',
+    'document.required' => 'Gafaf',
     ];
 
     protected $perPage = 20;
